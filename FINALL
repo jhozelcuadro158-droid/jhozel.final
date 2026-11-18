@@ -1,0 +1,231 @@
+# ============================================
+#          PYTHON LEARNING SYSTEM
+# ============================================
+# Program Creator: Your Name
+# Date Created: November 18, 2026
+#
+# Python Creator: Guido van Rossum
+# Python First Released: February 20, 1991
+# ============================================
+
+
+def main():
+
+    while True:
+
+        print("\n================================")
+        print("       PYTHON LEARNING SYSTEM")
+        print("================================")
+        print("[1] Introduction to Programming")
+        print("[2] Basic Syntax")
+        print("[3] Arithmetic Operators")
+        print("[4] Input and Output")
+        print("[5] Conditional Statements")
+        print("[6] History of Python")
+        print("[7] Exit")
+        print("================================")
+
+        choice = input("Choose an option: ")
+
+        if choice == "1":
+
+            print("\n=== INTRODUCTION TO PROGRAMMING ===")
+            print("Programming is giving instructions")
+            print("to a computer to perform tasks.")
+            print("Python is a beginner-friendly language.")
+
+            print("\n--- EXAMPLE ---")
+            print('print("Hello World")')
+            print("Output: Hello World")
+
+            print("\n--- QUIZ ---")
+            print("1. What is programming?")
+            print("A. Playing games")
+            print("B. Giving instructions to a computer")
+            print("C. Watching videos")
+
+            answer = input("Your answer: ").upper()
+
+            if answer == "B":
+                print("Correct Answer!")
+            else:
+                print("Wrong! The correct answer is B.")
+
+            print("\n--- SUMMARY ---")
+            print("Programming means giving instructions")
+            print("to a computer. Python is a programming")
+            print("language used to create programs.")
+
+        elif choice == "2":
+
+            print("\n=== BASIC SYNTAX ===")
+            print("Basic syntax refers to the rules")
+            print("used when writing Python code.")
+
+            print("\n--- EXAMPLE ---")
+            print("print('Hello World')")
+            print("Output: Hello World")
+
+            print("\n--- QUIZ ---")
+            print("1. What command displays text?")
+            print("A. input()")
+            print("B. print()")
+            print("C. break")
+
+            answer = input("Your answer: ").upper()
+
+            if answer == "B":
+                print("Correct Answer!")
+            else:
+                print("Wrong! The correct answer is B.")
+
+            print("\n--- SUMMARY ---")
+            print("Basic syntax is the correct way")
+            print("of writing Python instructions.")
+            print("The print() command displays text.")
+
+        elif choice == "3":
+
+            print("\n=== ARITHMETIC OPERATORS ===")
+
+            a = 10
+            b = 5
+
+            print("First Number:", a)
+            print("Second Number:", b)
+            print("Addition:", a + b)
+            print("Subtraction:", a - b)
+            print("Multiplication:", a * b)
+            print("Division:", a / b)
+            print("Modulus:", a % b)
+
+            print("\n--- QUIZ ---")
+            print("1. What is 10 + 5?")
+            print("A. 10")
+            print("B. 15")
+            print("C. 20")
+
+            answer = input("Your answer: ").upper()
+
+            if answer == "B":
+                print("Correct Answer!")
+            else:
+                print("Wrong! The correct answer is B.")
+
+            print("\n--- SUMMARY ---")
+            print("Arithmetic operators are used")
+            print("for mathematical calculations.")
+            print("Examples are addition, subtraction,")
+            print("multiplication, division, and modulus.")
+
+        elif choice == "4":
+
+            print("\n=== INPUT AND OUTPUT ===")
+
+            name = input("Enter your name: ")
+            age = input("Enter your age: ")
+
+            print("\nHello", name)
+            print("Your age is", age)
+
+            print("\n--- QUIZ ---")
+            print("1. What is input() used for?")
+            print("A. Getting information from the user")
+            print("B. Ending the program")
+            print("C. Adding numbers")
+
+            answer = input("Your answer: ").upper()
+
+            if answer == "A":
+                print("Correct Answer!")
+            else:
+                print("Wrong! The correct answer is A.")
+
+            print("\n--- SUMMARY ---")
+            print("Input allows users to enter information.")
+            print("Output displays information on the screen.")
+
+        elif choice == "5":
+
+            print("\n=== CONDITIONAL STATEMENTS ===")
+
+            grade = input("Enter your grade: ")
+
+            if grade.isdigit():
+
+                grade = int(grade)
+
+                if grade >= 0 and grade <= 100:
+
+                    if grade >= 75:
+                        print("Congratulations! You Passed!")
+                    else:
+                        print("Sorry, You Failed!")
+
+                else:
+                    print("Please enter a grade from 0 to 100.")
+
+            else:
+                print("Invalid input! Please enter a number.")
+
+            print("\n--- QUIZ ---")
+            print("1. What does >= mean?")
+            print("A. Less than")
+            print("B. Greater than or equal to")
+            print("C. Equal to")
+
+            answer = input("Your answer: ").upper()
+
+            if answer == "B":
+                print("Correct Answer!")
+            else:
+                print("Wrong! The correct answer is B.")
+
+            print("\n--- SUMMARY ---")
+            print("Conditional statements allow a program")
+            print("to make decisions using if, elif, and else.")
+
+        elif choice == "6":
+
+            print("\n=== HISTORY OF PYTHON ===")
+
+            print("Python was created by Guido van Rossum.")
+            print("Development started in the late 1980s.")
+            print("Python was first released in 1991.")
+            print("It is a high-level programming language.")
+            print("Python is used in websites, applications,")
+            print("artificial intelligence, and data science.")
+
+            print("\n--- QUIZ ---")
+            print("1. Who created Python?")
+            print("A. Bill Gates")
+            print("B. Guido van Rossum")
+            print("C. Steve Jobs")
+
+            answer = input("Your answer: ").upper()
+
+            if answer == "B":
+                print("Correct Answer!")
+            else:
+                print("Wrong! The correct answer is B.")
+
+            print("\n--- SUMMARY ---")
+            print("Guido van Rossum created Python.")
+            print("Python was first released in 1991.")
+
+        elif choice == "7":
+
+            print("\n================================")
+            print(" THANK YOU FOR USING PYTHON!")
+            print(" Keep Learning and Keep Practicing!")
+            print("================================")
+            break
+
+        else:
+
+            print("\nInvalid choice!")
+            print("Please choose from 1 to 7.")
+
+        input("\nPress ENTER to return to the menu...")
+
+
